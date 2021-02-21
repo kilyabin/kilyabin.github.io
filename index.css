@@ -65,3 +65,12 @@ body
    -moz-animation: fall 955ms linear 0ms infinite alternate both;
    animation: fall 955ms linear 0ms infinite alternate both;
 }
+#Picture1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
