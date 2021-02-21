@@ -21,3 +21,21 @@ body
    margin: 0;
    width: 100%;
 }
+#wb_TextArt1
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#TextArt1
+{
+   border-width: 0;
+   vertical-align: top;
+}
+#wb_TextArt1
+{
+   vertical-align: top;
+   margin: 0;
+   -webkit-animation: flip 950ms ease 1ms infinite normal both;
+   -moz-animation: flip 950ms ease 1ms infinite normal both;
+   animation: flip 950ms ease 1ms infinite normal both;
+}

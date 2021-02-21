@@ -48,3 +48,20 @@ body
 {
    text-align: left;
 }
+#wb_TextArt1
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#TextArt1
+{
+   border-width: 0;
+   vertical-align: top;
+}
+#wb_TextArt1
+{
+   margin: 0;
+   -webkit-animation: fall 955ms linear 0ms infinite alternate both;
+   -moz-animation: fall 955ms linear 0ms infinite alternate both;
+   animation: fall 955ms linear 0ms infinite alternate both;
+}

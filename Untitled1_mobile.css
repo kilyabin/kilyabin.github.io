@@ -1,3 +1,36 @@
+@-webkit-keyframes fall
+{
+   0% { -webkit-transform: perspective(1300px) translate3d(0px,0px,600px) rotateX(20deg) ; opacity: 0;  }
+   100% { -webkit-transform: translate3d(0px,0px,0px) rotateX(0deg) ; opacity: 1;  }
+}
+@-moz-keyframes fall
+{
+   0% { -moz-transform: perspective(1300px) translate3d(0px,0px,600px) rotateX(20deg) ; opacity: 0;  }
+   100% { -moz-transform: translate3d(0px,0px,0px) rotateX(0deg) ; opacity: 1;  }
+}
+@keyframes fall
+{
+   0% { transform: perspective(1300px) translate3d(0px,0px,600px) rotateX(20deg) ; opacity: 0;  }
+   100% { transform: translate3d(0px,0px,0px) rotateX(0deg) ; opacity: 1;  }
+}
+@-webkit-keyframes flip
+{
+   0% { -webkit-transform: perspective(400px) rotateX(0deg) rotateY(-360deg) scale3d(1,1,1) ;  }
+   50% { -webkit-transform: perspective(400px) rotateX(0deg) rotateY(-180deg) scale3d(1.2,1.2,1.2) ;  }
+   100% { -webkit-transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale3d(1.0,1.0,1.0) ;  }
+}
+@-moz-keyframes flip
+{
+   0% { -moz-transform: perspective(400px) rotateX(0deg) rotateY(-360deg) scale3d(1,1,1) ;  }
+   50% { -moz-transform: perspective(400px) rotateX(0deg) rotateY(-180deg) scale3d(1.2,1.2,1.2) ;  }
+   100% { -moz-transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale3d(1.0,1.0,1.0) ;  }
+}
+@keyframes flip
+{
+   0% { transform: perspective(400px) rotateX(0deg) rotateY(-360deg) scale3d(1,1,1) ;  }
+   50% { transform: perspective(400px) rotateX(0deg) rotateY(-180deg) scale3d(1.2,1.2,1.2) ;  }
+   100% { transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale3d(1.0,1.0,1.0) ;  }
+}
 h1, .h1
 {
    font-family: Arial;
