@@ -19,6 +19,7 @@ body
 {
    display: block;
    margin: 0;
+   box-sizing: border-box;
    width: 100%;
 }
 #wb_TextArt1
@@ -36,6 +37,5 @@ body
    vertical-align: top;
    margin: 0;
    -webkit-animation: flip 950ms ease 1ms infinite normal both;
-   -moz-animation: flip 950ms ease 1ms infinite normal both;
    animation: flip 950ms ease 1ms infinite normal both;
 }

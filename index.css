@@ -9,6 +9,28 @@ body
    margin: 0;
    padding: 0;
 }
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
 #wb_Text1 
 {
    background-color: transparent;
@@ -62,6 +84,5 @@ body
 {
    margin: 0;
    -webkit-animation: fall 955ms linear 0ms infinite alternate both;
-   -moz-animation: fall 955ms linear 0ms infinite alternate both;
    animation: fall 955ms linear 0ms infinite alternate both;
 }
