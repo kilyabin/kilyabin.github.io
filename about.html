@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<link href="css/Untitled1.css" rel="stylesheet">
+<link href="css/about.css" rel="stylesheet">
+<script src="js/anime.min.js"></script>
+<script src="js/polymorph.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon1-shape');
+   var paths = ["M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42"];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'linear',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 0)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon2-shape');
+   var paths = ["M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42"];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'linear',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 0)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon3-shape');
+   var paths = ["M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42"];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'linear',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 0)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var shapePath = document.querySelector('#MorphingIcon4-shape');
+   var paths = ["M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42"];
+   var interpolator = [];
+   interpolator[0] = polymorph.interpolate([paths[0], paths[0]]);
+   let progress = { prop: 0 };
+   var pathIndex = 0;
+   anime({
+      targets: progress,
+      prop: 1,
+      delay: 0,
+      duration: 2000,
+      easing: 'linear',
+      loop: true,
+      direction: 'normal',
+      update(anim) 
+      {
+         shapePath.setAttribute('d', interpolator[pathIndex](progress.prop));
+         if (anim.progress == 100)
+         {
+            pathIndex++;
+            if (pathIndex > 0)
+               pathIndex = 0;
+         }
+      }
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_Text1" style="position:absolute;left:960px;top:330px;width:55px;height:15px;z-index:0;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">О сайте</span></div>
+<hr id="Line1" style="position:absolute;left:863px;top:354px;width:248px;z-index:1;">
+<div id="wb_MorphingIcon1" style="position:absolute;left:461px;top:101px;width:99px;height:99px;z-index:2;">
+<svg id="MorphingIcon1" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 99 99" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="MorphingIcon1-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#0963AD" />
+   <stop offset="100%" stop-color="#90C9EC" />
+   </linearGradient>
+   <path id="MorphingIcon1-shape" d="M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42" />
+</defs>
+<use xlink:href="#MorphingIcon1-shape" data-href="#MorphingIcon1-shape" style="fill:url(#MorphingIcon1-gradient);stroke:#0963AD;stroke-width:1"/>
+</svg>
+</div>
+<div id="wb_MorphingIcon2" style="position:absolute;left:1292px;top:101px;width:99px;height:99px;z-index:3;">
+<svg id="MorphingIcon2" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 99 99" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="MorphingIcon2-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#0963AD" />
+   <stop offset="100%" stop-color="#90C9EC" />
+   </linearGradient>
+   <path id="MorphingIcon2-shape" d="M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42" />
+</defs>
+<use xlink:href="#MorphingIcon2-shape" data-href="#MorphingIcon2-shape" style="fill:url(#MorphingIcon2-gradient);stroke:#0963AD;stroke-width:1"/>
+</svg>
+</div>
+<div id="wb_MorphingIcon3" style="position:absolute;left:436px;top:791px;width:99px;height:99px;z-index:4;">
+<svg id="MorphingIcon3" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 99 99" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="MorphingIcon3-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#0963AD" />
+   <stop offset="100%" stop-color="#90C9EC" />
+   </linearGradient>
+   <path id="MorphingIcon3-shape" d="M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42" />
+</defs>
+<use xlink:href="#MorphingIcon3-shape" data-href="#MorphingIcon3-shape" style="fill:url(#MorphingIcon3-gradient);stroke:#0963AD;stroke-width:1"/>
+</svg>
+</div>
+<div id="wb_MorphingIcon4" style="position:absolute;left:1353px;top:809px;width:99px;height:99px;z-index:5;">
+<svg id="MorphingIcon4" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 99 99" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="MorphingIcon4-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#0963AD" />
+   <stop offset="100%" stop-color="#90C9EC" />
+   </linearGradient>
+   <path id="MorphingIcon4-shape" d="M32 59 C36 66, 42 69, 50 69 C57 69, 63 66, 67 59 L75 59 C73 65, 70 69, 65 72 C60 75, 55 77, 50 77 C44 77, 39 75, 34 72 C30 69, 26 65, 24 59 Z M21 77 C29 85, 39 89, 50 89 C60 89, 70 85, 78 77 C85 70, 89 60, 89 49 C89 39, 85 29, 78 22 C70 14, 60 10, 50 10 C39 10, 29 14, 21 22 C14 29, 10 39, 10 49 C10 60, 14 70, 21 77 Z M15 15 C24 5, 36 0, 50 0 C63 0, 75 5, 85 15 C94 24, 99 36, 99 49 C99 63, 94 75, 85 84 C75 94, 63 99, 50 99 C36 99, 24 94, 15 84 C5 75, 0 63, 0 49 C0 36, 5 24, 15 15 Z M27 42 C25 41, 25 39, 25 37 C25 35, 25 33, 27 32 C28 30, 30 30, 32 30 C34 30, 36 30, 37 32 C39 33, 40 35, 40 37 C40 39, 39 41, 37 42 C36 44, 34 45, 32 45 C30 45, 28 44, 27 42 Z M62 42 C60 41, 59 39, 59 37 C59 35, 60 33, 62 32 C63 30, 65 30, 67 30 C69 30, 71 30, 72 32 C74 33, 74 35, 74 37 C74 39, 74 41, 72 42 C71 44, 69 45, 67 45 C65 45, 63 44, 62 42" />
+</defs>
+<use xlink:href="#MorphingIcon4-shape" data-href="#MorphingIcon4-shape" style="fill:url(#MorphingIcon4-gradient);stroke:#0963AD;stroke-width:1"/>
+</svg>
+</div>
+<div id="wb_JavaScript1" style="position:absolute;left:100px;top:28px;width:197px;height:52px;z-index:6;">
+<script>
+
+var blink = 0;
+ 
+function Blink(id)
+{
+   if (blink%2==0)
+   {
+      eval('document.getElementById("' + id + '").style.display=""');
+   }
+   else
+   {
+      eval('document.getElementById("' + id + '").style.display="none"');
+   }
+   if (blink<1)
+   {
+      blink++;
+   } 
+   else
+   {
+      blink--;
+   }
+   setTimeout("Blink('"+id+"')", 100);
+}
+document.write('<div id="wb_blink" style="display:none;color:#FF0000;font-size:27px;font-family:Arial;font-weight:bold;font-style:normal;text-align:left;text-decoration:none">взлом жопы<\/div>');
+Blink('wb_blink');
+</script>
+</div>
+<div id="wb_JavaScript2" style="position:absolute;left:949px;top:370px;width:93px;height:39px;z-index:7;">
+<div style="color:#000000;font-size:16px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none" id="typewriter"></div>
+<script>
+var ch = 0;
+var txt = 'Проекты:';
+var speed = 50;
+var pause = 5000;
+
+function typeWriterInit()
+{
+   ch = 0; 
+   document.getElementById("typewriter").innerHTML = '';
+   typeWriter();
+}
+function typeWriter() 
+{
+   if (ch < txt.length) 
+   {
+      document.getElementById("typewriter").innerHTML += txt.charAt(ch);
+      ch++;
+      setTimeout(typeWriter, speed);
+   }
+   else
+   {
+      if (pause > 0)
+      {
+          setTimeout(typeWriterInit, pause);
+      }
+   }
+}
+typeWriterInit();
+</script></div>
+<div id="wb_JavaScript3" style="position:absolute;left:884px;top:394px;width:238px;height:97px;z-index:8;">
+<div style="color:#000000;font-size:16px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none" id="typewriter-deluxe">
+<span id="typewriter-text" style="border-right: 0.08em solid #000000;"></span>
+</div>
+<script>
+var data = "Пока ничего интересного...";
+var lines = data.split('^');
+var reverse = false;
+var index = 0;
+var text = '';
+var typeWriterElement = document.getElementById("typewriter-text");
+function typeWriterDeluxe() 
+{
+   var i = index % lines.length;
+   var line = lines[i];
+   if (reverse) 
+   {
+      text = line.substring(0, text.length - 1);
+   } 
+   else 
+   {
+      text = line.substring(0, text.length + 1);
+   }
+   typeWriterElement.innerHTML = text;
+   var timeout = 250 - Math.random() * (250/2);
+   if (reverse) 
+   { 
+      timeout /= 2; 
+   }
+   if (!reverse && text === line) 
+   {
+      timeout = 5000;
+      reverse = true;
+   } 
+   else 
+   if (reverse && text === '') 
+   {
+      reverse = false;
+      index++;
+      timeout = 500;
+   }
+   setTimeout(typeWriterDeluxe, timeout);
+}
+typeWriterDeluxe();
+</script></div>
+</body>
+</html>
