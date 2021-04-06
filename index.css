@@ -86,3 +86,16 @@ input:focus, textarea:focus, select:focus
    -webkit-animation: fall 955ms linear 0ms infinite alternate both;
    animation: fall 955ms linear 0ms infinite alternate both;
 }
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
