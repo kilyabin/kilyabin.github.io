@@ -6,10 +6,22 @@
 <meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="downloadcenter.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
 <div id="wb_Text1" style="position:absolute;left:75px;top:34px;width:250px;height:45px;z-index:0;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Download center<br><br>Files avalaible to download:</span></div>
 
+<div id="preloader"></div>
 </body>
 </html>

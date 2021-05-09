@@ -6,6 +6,17 @@
 <meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="vdska.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
 <div id="wb_Text1" style="position:absolute;left:616px;top:31px;width:617px;height:36px;z-index:0;">
@@ -14,5 +25,6 @@
 <img src="images/6p73d5neg7.jpg" id="Image1" alt=""></div>
 <div id="wb_Text2" style="position:absolute;left:616px;top:92px;width:461px;height:107px;z-index:2;">
 <span style="color:#000000;font-family:Arial;font-size:32px;">Пока сделал на ней впн сервак, в будущем планирую сделать сервер майнсрафт</span></div>
+<div id="preloader"></div>
 </body>
 </html>

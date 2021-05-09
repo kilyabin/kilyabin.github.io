@@ -6,11 +6,23 @@
 <meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="datacenter.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
 <div id="wb_Image1" style="position:absolute;left:-21px;top:110px;width:669px;height:570px;z-index:0;">
 <img src="images/datacenter-1.png" id="Image1" alt=""></div>
 <div id="wb_Text1" style="position:absolute;left:42px;top:20px;width:916px;height:36px;z-index:1;">
 <span style="color:#000000;font-family:'Courier New';font-size:32px;"><strong>Наши дата-центры</strong></span></div>
+<div id="preloader"></div>
 </body>
 </html>

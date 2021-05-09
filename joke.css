@@ -31,6 +31,15 @@ input:focus, textarea:focus, select:focus
 {
    outline: none;
 }
+#preloader
+{
+   background: #FFFFFF url("images/bouncing-dot.gif") no-repeat center center;
+   bottom: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
+}
 #MediaPlayer1
 {
    left: 0;

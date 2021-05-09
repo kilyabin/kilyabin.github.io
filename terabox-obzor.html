@@ -18,6 +18,16 @@ $(document).on("mobileinit", function()
 });
 </script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate", "#terabox-obzor", function(event)
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
 <div data-role="page" data-theme="a" data-title="Untitled Page" id="terabox-obzor">
@@ -38,5 +48,6 @@ $(document).on("mobileinit", function()
 </div>
 </div>
 </div>
+<div id="preloader"></div>
 </body>
 </html>

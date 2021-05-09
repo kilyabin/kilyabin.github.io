@@ -8,6 +8,7 @@
 <link href="about.css" rel="stylesheet">
 <script src="anime.min.js"></script>
 <script src="polymorph.min.js"></script>
+<script src="jquery-1.12.4.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
@@ -126,6 +127,16 @@ document.addEventListener('DOMContentLoaded', function(event)
          }
       }
    });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
 });
 </script>
 </head>
@@ -289,5 +300,6 @@ typeWriterDeluxe();
 </script></div>
 <div id="Html1" style="position:absolute;left:15px;top:218px;width:100px;height:104px;z-index:9">
 <script async src="https://arc.io/widget.min.js#WBUHTwsa"></script></div>
+<div id="preloader"></div>
 </body>
 </html>

@@ -6,6 +6,17 @@
 <meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="changelog.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
 <div id="wb_Text1" style="position:absolute;left:54px;top:153px;width:613px;height:45px;z-index:0;">
@@ -14,5 +25,6 @@
 <img src="images/source.gif" id="Image1" alt=""></div>
 <div id="wb_Text4" style="position:absolute;left:54px;top:36px;width:465px;height:74px;z-index:2;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">13.04.2021<br><br>Купил домен другу, решил себе частичку отделить) <br><br>теперь можно зайти и по <strong><a href="http://ilyakm.rnbvnaturre.fun">ilyakm.rnbvnaturre.fun</a></strong></span></div>
+<div id="preloader"></div>
 </body>
 </html>

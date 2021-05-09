@@ -6,6 +6,17 @@
 <meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="obzor-galaxy-m21.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
 </head>
 <body>
 <div id="wb_Text1" style="position:absolute;left:776px;top:62px;width:509px;height:36px;z-index:0;">
@@ -23,5 +34,6 @@
 <span style="color:#000000;font-family:Arial;font-size:64px;">Позже доделаю</span></div>
 <div id="Html1" style="position:absolute;left:158px;top:29px;width:100px;height:102px;z-index:7">
 <script async src="https://arc.io/widget.min.js#WBUHTwsa"></script></div>
+<div id="preloader"></div>
 </body>
 </html>
