@@ -61,5 +61,13 @@
       Blink('wb_blink');
       </script>
    </div>
+   <div style="z-index:9">
+      <script>      
+      var isMobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+      if (isMobile)
+      {
+         location.replace("./mobile.html");
+      }  
+      </script>  </div>
 </body>
 </html>
