@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="default/jquery.mobile.theme-1.4.5.css" rel="stylesheet">
+<link href="default/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet">
+<link href="jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+<link href="Untitled1_mobile.css" rel="stylesheet">
+<link href="mobile.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>   
+   $(document).on("mobileinit", function()
+   {
+      $.mobile.ajaxEnabled = false;
+   });
+</script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+   <div data-role="page" data-theme="a" data-title="Untitled Page" id="mobile">
+      <div class="ui-content" role="main">
+         <div id="wb_Text5">
+            <span style="color:#000000;font-family:Arial;font-size:16px;">реклама, за которую мне НЕ заплатили</span>
+         </div>
+         <div id="wb_Image2">
+            <img src="images/rnbvnaturre_music_advert.png" id="Image2" alt="" width="450" height="350"></div>
+         <div id="wb_Text3">
+&nbsp;
+         </div>
+         <div id="wb_Text6">
+            <span style="color:#000000;font-family:Arial;font-size:13px;"><a href="https://band.link/wqGKF" target="_blank">(меня заинтересовало)</a></span>
+         </div>
+         <div id="wb_JavaScript1">
+            <script>            
+            
+            var blink = 0;
+             
+            function Blink(id)
+            {
+               if (blink%2==0)
+               {
+                  eval('document.getElementById("' + id + '").style.display=""');
+               }
+               else
+               {
+                  eval('document.getElementById("' + id + '").style.display="none"');
+               }
+               if (blink<1)
+               {
+                  blink++;
+               } 
+               else
+               {
+                  blink--;
+               }
+               setTimeout("Blink('"+id+"')", 150);
+            }
+            document.write('<div id="wb_blink" style="display:none;color:#FF0000;font-size:27px;font-family:Verdana;font-weight:normal;font-style:normal;text-align:left;text-decoration:none">Этот сайт больше не обновляется. Уберите io в начале домена чтобы попасть на основной сервер.<\/div>');
+            Blink('wb_blink');
+            </script>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
